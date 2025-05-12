@@ -5,6 +5,7 @@ import Loading from './pages/Loading'
 
 const Home = lazy(() => import('./pages/Home'))
 const TextEditor = lazy(() => import('./pages/TextEditor'))
+const NavbarPage = lazy(() => import('./pages/NavbarPage'))
 const NotFound = lazy(() => import('./pages/NotFound'))
 
 function App() {
@@ -12,7 +13,9 @@ function App() {
     <Suspense fallback={<Loading />}>
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/home' element={<TextEditor />} />
         <Route path='/text' element={<TextEditor />} />
+        <Route path='/nav' element={<NavbarPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Suspense>
