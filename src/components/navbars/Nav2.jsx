@@ -4,11 +4,12 @@ import { HiOutlineMenuAlt3, HiOutlineX } from 'react-icons/hi';
 import { Link as RouterLink, useLocation } from 'react-router-dom';
 import { navigation } from '../../utils/content';
 
-const Navbar1 = () => {
+const Nav2 = () => {
     const userId = '123456'
     const [menuOpen, setMenuOpen] = useState(false);
     const location = useLocation();
     const path = location.pathname;
+
 
 
     const toggleMenu = () => {
@@ -20,7 +21,7 @@ const Navbar1 = () => {
     }
 
     return (
-        <header className={`p-4 fixed sm:px-10  w-full top-0 z-50 transition-all duration-300 backdrop-blur-lg text-black`}>
+        <header className={`p-4 sm:px-10  w-full mt-20 transition-all duration-300 backdrop-blur-lg text-black`}>
             <div className="container mx-auto flex justify-between items-center h-16">
                 {/* Logo */}
                 <RouterLink to="/home" className="cursor-pointer no-underline text-black">
@@ -115,4 +116,4 @@ const Navbar1 = () => {
     )
 }
 
-export default Navbar1;
+export default Nav2;

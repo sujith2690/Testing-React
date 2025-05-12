@@ -1,15 +1,14 @@
 import React from 'react'
-import Navbar1 from '../components/navbars/Navbar1'
+import HotToast from '../components/toasts/HotToast'
 import Nav2 from '../components/navbars/Nav2'
 
-const NavbarPage = () => {
-
+const Toasts = () => {
     return (
         <div>
-            <Navbar1 />
             <Nav2 />
+            <HotToast />
         </div>
     )
 }
 
-export default NavbarPage
+export default Toasts
