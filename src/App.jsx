@@ -1,5 +1,5 @@
 import { lazy, Suspense } from 'react'
-import './App.css'
+import './styles/App.css'
 import { Route, Routes } from 'react-router-dom'
 import Loading from './pages/Loading'
 

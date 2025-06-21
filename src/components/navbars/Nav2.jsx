@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { SiTestinglibrary } from 'react-icons/si';
 import { HiOutlineMenuAlt3, HiOutlineX } from 'react-icons/hi';
 import { Link as RouterLink, useLocation } from 'react-router-dom';
-import { navigation } from '../../utils/content';
+import { navigation } from '../../utils/constent';
 
 const Nav2 = () => {
     const userId = '123456'
